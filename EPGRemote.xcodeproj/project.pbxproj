@@ -49,6 +49,8 @@
 		69D10E431F03BC7D00A3E89C /* EPGRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPGRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D10E471F03BC7D00A3E89C /* EPGRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGRemoteUITests.swift; sourceTree = "<group>"; };
 		69D10E491F03BC7D00A3E89C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69EB24D71F04BE3D000FFFB4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		69EB24D81F04BE3D000FFFB4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +307,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				69D10E2C1F03BC7D00A3E89C /* Base */,
+				69EB24D71F04BE3D000FFFB4 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				69D10E311F03BC7D00A3E89C /* Base */,
+				69EB24D81F04BE3D000FFFB4 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -375,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
