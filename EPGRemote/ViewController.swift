@@ -4,6 +4,7 @@ import WebKit
 class ViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView?
     var urlStr: String = ""
+    var refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,10 @@ class ViewController: UIViewController, WKNavigationDelegate {
 
         //スワイプで戻る、進むを有効化
         self.webView?.allowsBackForwardNavigationGestures = true
+
+        //Pull to Refresh
+        self.refreshControl.addTarget(self, action: #selector(self.refreshWebView), for: UIControlEvents.valueChanged)
+        webView?.scrollView.addSubview(self.refreshControl)
     }
 
     //load WebView
@@ -58,6 +63,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
         }
 
         return "";
+    }
+
+    //refresh WebView
+    func refreshWebView() {
+        self.webView?.reload()
+        self.refreshControl.endRefreshing()
     }
 
     //URL Scheme の対応
